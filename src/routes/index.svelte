@@ -3,11 +3,10 @@
 </script>
 
 <script>
-  import Counter from "$lib/Counter.svelte";
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>art.foam</title>
 </svelte:head>
 
 <section>
@@ -18,15 +17,8 @@
         <img src="rdr-wlcm.png" alt="Welcome" />
       </picture>
     </div>
-
-    to your new<br />SvelteKit app
+    new art foam.build
   </h1>
-
-  <h2>
-    try editing <strong>src/routes/index.svelte</strong>
-  </h2>
-
-  <Counter />
 </section>
 
 <style>
@@ -44,16 +36,16 @@
 
   .welcome {
     position: relative;
-    filter: grayscale();
+
     width: 100%;
     height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
+    padding: 0 0 calc(100% * 9 / 12) 0;
   }
 
   .welcome img {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 0;
     display: block;
   }

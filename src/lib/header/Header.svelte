@@ -1,11 +1,10 @@
 <script>
   import { page } from "$app/stores";
-  import logo from "./svelte-logo.svg";
 </script>
 
 <header>
   <div class="corner" />
-
+  <!-- TODO put something else here? github link? -->
   <nav>
     <ul>
       <li class:active={$page.url.pathname === "/"}>
