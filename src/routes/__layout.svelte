@@ -1,45 +1,42 @@
 <script>
   import Header from "$lib/header/Header.svelte";
+  import Footer from "$lib/footer/Footer.svelte";
   import "../app.css";
 </script>
 
+<svelte:head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
+
 <Header />
 
-<main>
+<main class="wrapper">
   <slot />
 </main>
 
-<footer>
-  <p>visit <a href="https://art.foam.io">art.foam.io</a></p>
-</footer>
+<Footer />
 
 <style>
   main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
+    min-height: calc(100vh - 10rem);
     box-sizing: border-box;
   }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 40px 0;
-    }
+  .wrapper {
+    width: clamp(16rem, 90vw, 70rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 </style>

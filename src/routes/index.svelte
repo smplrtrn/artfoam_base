@@ -6,47 +6,114 @@
 </script>
 
 <svelte:head>
-  <title>art.foam</title>
+  <title>art.foam.builder</title>
 </svelte:head>
 
-<section>
-  <h1>
-    <div class="welcome">
-      <picture>
-        <source srcset="rdr-wlcm.webp" type="image/webp" />
-        <img src="rdr-wlcm.png" alt="Welcome" />
-      </picture>
-    </div>
-    new art foam.build
-  </h1>
-</section>
+<div class="content">
+  <h1>Foam</h1>
+  <figure class="p-frame">
+    <source srcset="qimg.webp" type="image/webp" />
+    <svg xmlns="http://www.w3.org/2000/svg" height="0">
+      <filter id="filter">
+        <feColorMatrix
+          type="matrix"
+          values=" 0.948  0.000 -0.089 -0.196  0.113
+               0.000  0.080  0.762  0.000 -0.003
+              -0.099 -0.354  1.030  0.030 -0.003
+              -1.000  0.000  0.000  1.000  0.142"
+        />
+      </filter>
+    </svg> <img src="qimg.jpg" alt="Welcome" class="welcome" />
+    <figcaption class="c-frame">What<br />else?</figcaption>
+  </figure>
+  <section class="t-frame">
+    <article class="sheet">
+      <h2>Well ...</h2>
+      <p>
+        Apparently .... we'd need some more text to fill up the background. Wich
+        would be absolutely fine, I think. Turns out it is not dynamicly
+        adjusting, needs background-size set to cover. Maybe try contain
+        instead?
+      </p>
+    </article>
+  </section>
+</div>
 
 <style>
-  section {
+  .content {
+    width: 100%;
+    max-width: var(--column-width);
+    margin: var(--column-margin-top) auto var(--column-margin-bottom) auto;
+  }
+
+  .t-frame {
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%238a8a8aef' points='0.42555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: repeat;
+    fill: var(--accent-color);
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: clamp(0.349rem, 0.349vw, 0.849rem)
+      clamp(0.1549rem, 0.4535vw, 0.649rem) clamp(0.1549rem, 0.1549vw, 0.49rem);
+  }
+
+  .sheet {
     display: flex;
+    margin: 0.649rem 0.349rem 0.649rem;
+    padding: 1rem;
+    background: linear-gradient(
+      209deg,
+      var(--primary-color) 58%,
+      var(--secondary-color) 201%,
+      var(--tertiary-color) 32.35%,
+      var(--secondary-color) 59.45%,
+      var(--primary-color) -12%
+    );
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%23e9ebf0ea' points='1.02555,0.56458336 292.92594,-1.8422832 286.61518,289.37616 -3.26458325,288.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
   }
 
-  h1 {
-    width: 100%;
+  .p-frame {
+    display: block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%238a8a8aef' points='1.02555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: repeat;
+    fill: var(--accent-color);
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(0.649rem, 1.349vw, 1.649rem);
+    padding-right: clamp(0.349rem, 0.935vw, 1.349rem);
   }
 
-  .welcome {
+  .c-frame {
+    display: inline-flex;
+    background: linear-gradient(
+      209deg,
+      var(--primary-color) 58%,
+      var(--secondary-color) 201%,
+      var(--tertiary-color) 32.35%,
+      var(--secondary-color) 59.45%,
+      var(--primary-color) -12%
+    );
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10'%3E%3Cg %3E%3Cpolygon fill='%23e9ebf0ea' points='-14.97445,0.56458336 292.92594,-1.842283 -4.38482,13.37616 -4.264583,12.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    width: 49%;
+    margin-left: 25%;
+    margin-right: auto;
+    padding: 0.5rem 0.5%;
+    justify-content: space-evenly;
+  }
+
+  img.welcome {
     position: relative;
-
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 9 / 12) 0;
-  }
-
-  .welcome img {
-    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    display: block;
+    /* padding: 0 0 calc(100% * 9 / 12) 0; */
   }
 </style>

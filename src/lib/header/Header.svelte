@@ -3,23 +3,29 @@
 </script>
 
 <header>
-  <div class="corner" />
+  <div class="tl-corner" />
   <!-- TODO put something else here? github link? -->
-  <nav>
+  <nav class="m-links">
+    <svg class="arr" viewBox="0 0 100 150">
+      <polygon points="0,0 100,0 100,150 0,75" style="stroke-width:0" />
+    </svg>
     <ul>
       <li class:active={$page.url.pathname === "/"}>
-        <a sveltekit:prefetch href="/">Home</a>
+        <a sveltekit:prefetch href="/">Foam</a>
       </li>
-      <li class:active={$page.url.pathname === "/about"}>
-        <a sveltekit:prefetch href="/about">About</a>
+      <li class:active={$page.url.pathname === "/notes"}>
+        <a sveltekit:prefetch href="/notes">Notes</a>
       </li>
-      <li class:active={$page.url.pathname === "/todos"}>
-        <a sveltekit:prefetch href="/todos">Todos</a>
+      <li class:active={$page.url.pathname === "/build"}>
+        <a sveltekit:prefetch href="/build">Build</a>
       </li>
     </ul>
+    <svg class="arr" viewBox="0 0 100 150">
+      <polygon points="0,0 125,0 125,50 0,150" style="stroke-width:0" />
+    </svg>
   </nav>
 
-  <div class="corner">
+  <div class="tr-corner">
     <!-- TODO put something else here? github link? -->
   </div>
 </header>
@@ -28,30 +34,35 @@
   header {
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
   }
 
-  .corner {
-    width: 3em;
-    height: 3em;
+  .tl-corner,
+  .tr-corner {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   nav {
     display: flex;
     justify-content: center;
-    --background: rgba(255, 255, 255, 0.3);
+    height: 4.5rem;
+  }
+
+  svg.arr polygon {
+    fill: var(--accent-color);
   }
 
   ul {
     position: relative;
-    padding: 0;
+    padding: 0 0.5rem;
     margin: 0;
-    height: 3em;
+    height: 4.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    background: var(--background);
-    background-size: contain;
+    background: var(--tertiary-color);
   }
 
   li {
@@ -60,27 +71,26 @@
   }
 
   li.active::before {
-    --size: 6px;
+    --size: 5px;
     content: "";
-    width: 0;
-    height: 0;
+    width: calc(var(--size) * 2);
+    height: calc(var(--size) * 2);
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: calc(50% - var(--size));
-    border: var(--size) solid transparent;
-    border-top: var(--size) solid var(--accent-color);
+    border-bottom: calc(var(--size) * 3) solid var(--text-color);
   }
 
   nav a {
     display: flex;
     height: 100%;
     align-items: center;
-    padding: 0 1em;
+    padding: 0 0.5rem;
     color: var(--heading-color);
-    font-weight: 700;
-    font-size: 0.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     transition: color 0.2s linear;
   }
