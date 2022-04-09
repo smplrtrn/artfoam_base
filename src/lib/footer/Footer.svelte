@@ -80,7 +80,7 @@
   }
 
   svg.arr polygon {
-    fill: var(--accent-color);
+    fill: var(--ltr-accent-color);
   }
 
   nav.m-links ul {
@@ -131,7 +131,7 @@
     position: absolute;
     top: 0;
     left: calc(50% - var(--size));
-    border-top: calc(var(--size) * 3) solid var(--text-color);
+    border-top: calc(var(--size) * 3) solid var(--dp-accent-color);
   }
 
   nav li a {

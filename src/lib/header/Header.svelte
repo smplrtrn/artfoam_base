@@ -50,7 +50,7 @@
   }
 
   svg.arr polygon {
-    fill: var(--accent-color);
+    fill: var(--ltr-accent-color);
   }
 
   ul {
@@ -78,7 +78,7 @@
     position: absolute;
     bottom: 0;
     left: calc(50% - var(--size));
-    border-bottom: calc(var(--size) * 3) solid var(--text-color);
+    border-bottom: calc(var(--size) * 3) solid var(--dp-accent-color);
   }
 
   nav a {

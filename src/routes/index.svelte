@@ -13,24 +13,45 @@
   <h1>Foam</h1>
   <figure class="p-frame">
     <source srcset="qimg.webp" type="image/webp" />
-    <svg xmlns="http://www.w3.org/2000/svg" height="0">
-      <filter id="filter">
-        <feColorMatrix
-          type="matrix"
-          values=" 0.948  0.000 -0.089 -0.196  0.113
-               0.000  0.080  0.762  0.000 -0.003
-              -0.099 -0.354  1.030  0.030 -0.003
-              -1.000  0.000  0.000  1.000  0.142"
-        />
-      </filter>
-    </svg> <img src="qimg.jpg" alt="Welcome" class="welcome" />
+    <filter
+      id="filter"
+      x="0%"
+      y="0%"
+      width="100%"
+      height="100%"
+      filterUnits="objectBoundingBox"
+      primitiveUnits="userSpaceOnUse"
+      color-interpolation-filters="sRGB"
+    >
+      <feColorMatrix
+        type="matrix"
+        values="1 0 0 0 0
+            1 0 0 0 0
+            1 0 0 0 0
+            0 0 0 1 0"
+        in="SourceGraphic"
+        result="colormatrix"
+      />
+      <feComponentTransfer in="colormatrix" result="componentTransfer">
+        <feFuncR type="table" tableValues="0.97 0.21 0.73" />
+        <feFuncG type="table" tableValues="0.93 0.17 0.27" />
+        <feFuncB type="table" tableValues="0.73 0.21 0.58" />
+        <feFuncA type="table" tableValues="0 1" />
+      </feComponentTransfer>
+      <feBlend
+        mode="multiply"
+        in="componentTransfer"
+        in2="SourceGraphic"
+        result="blend"
+      />
+    </filter><img src="qimg.jpg" alt="Welcome" class="welcome" />
     <figcaption class="c-frame">What<br />else?</figcaption>
   </figure>
   <section class="t-frame">
     <article class="sheet">
       <h2>Well ...</h2>
       <p>
-        Apparently .... we'd need some more text to fill up the background. Wich
+        apparently .... we'd need some more text to fill up the background. Wich
         would be absolutely fine, I think. Turns out it is not dynamicly
         adjusting, needs background-size set to cover. Maybe try contain
         instead?
@@ -81,7 +102,6 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%238a8a8aef' points='1.02555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
     background-size: cover;
     background-repeat: repeat;
-    fill: var(--accent-color);
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -112,8 +132,8 @@
 
   img.welcome {
     position: relative;
+    filter: url(#filter);
     width: 100%;
     height: 100%;
-    /* padding: 0 0 calc(100% * 9 / 12) 0; */
   }
 </style>
