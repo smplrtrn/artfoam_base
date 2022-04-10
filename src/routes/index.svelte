@@ -12,7 +12,7 @@
 <div class="content">
   <h1>Foam</h1>
   <figure class="p-frame">
-    <source srcset="qimg.webp" type="image/webp" />
+    <source srcset="qimg-dns.webp" type="image/webp" />
     <filter
       id="filter"
       x="0%"
@@ -33,9 +33,9 @@
         result="colormatrix"
       />
       <feComponentTransfer in="colormatrix" result="componentTransfer">
-        <feFuncR type="table" tableValues="0.97 0.21 0.73" />
-        <feFuncG type="table" tableValues="0.93 0.17 0.27" />
-        <feFuncB type="table" tableValues="0.73 0.21 0.58" />
+        <feFuncR type="table" tableValues="0.47 0.21 0.93" />
+        <feFuncG type="table" tableValues="0.93 0.17 0.47" />
+        <feFuncB type="table" tableValues="0.73 0.31 0.58" />
         <feFuncA type="table" tableValues="0 1" />
       </feComponentTransfer>
       <feBlend
@@ -44,7 +44,7 @@
         in2="SourceGraphic"
         result="blend"
       />
-    </filter><img src="qimg.jpg" alt="Welcome" class="welcome" />
+    </filter><img src="qimg-dns.jpg" alt="Welcome" class="welcome" />
     <figcaption class="c-frame">What<br />else?</figcaption>
   </figure>
   <section class="t-frame">
