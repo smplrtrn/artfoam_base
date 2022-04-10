@@ -45,7 +45,7 @@
         result="blend"
       />
     </filter><img src="qimg-dns.jpg" alt="Welcome" class="welcome" />
-    <figcaption class="c-frame">What<br />else?</figcaption>
+    <figcaption class="c-frame">What else?</figcaption>
   </figure>
   <section class="t-frame">
     <article class="sheet">
