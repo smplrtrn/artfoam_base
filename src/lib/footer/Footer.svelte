@@ -49,14 +49,12 @@
     height: 6rem;
   }
 
-  footer nav.f-links {
-    --background: var(--nav-bg);
+  section#footer {
+    background: #8e8e8e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%23d7dedaee' points='0.2555,0.264583 99.92594,0.422832 98.61518,100.37616 -0.26458325,100.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    flex-direction: row;
-    min-width: 98vw;
-    max-width: 62ch;
   }
 
   footer nav.m-links {
@@ -65,18 +63,10 @@
     height: 4.5rem;
   }
 
-  section#footer {
-    background-color: var(--primary-color);
-    background: linear-gradient(
-      282deg,
-      var(--primary-color) 72%,
-      var(--auxiliary-color) 115%,
-      var(--tertiary-color) 67.35%,
-      var(--auxiliary-color) 23.45%,
-      var(--tertiary-color) 119%
-    );
+  footer nav.f-links {
     display: flex;
-    justify-content: center;
+    width: clamp(72ch, 58rem, 360px);
+    align-items: baseline;
   }
 
   svg.arr polygon {
@@ -138,10 +128,10 @@
     display: flex;
     height: 100%;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0 clamp(0.1rem, 0.25rem, 0.5rem);
     color: var(--heading-color);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.1rem, 1.2rem);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;

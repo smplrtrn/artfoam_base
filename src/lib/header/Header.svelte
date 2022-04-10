@@ -3,38 +3,46 @@
 </script>
 
 <header>
-  <div class="tl-corner" />
-  <!-- TODO put something else here? github link? -->
-  <nav class="m-links">
-    <svg class="arr" viewBox="0 0 100 150">
-      <polygon points="0,0 100,0 100,150 0,75" style="stroke-width:0" />
-    </svg>
-    <ul>
-      <li class:active={$page.url.pathname === "/"}>
-        <a sveltekit:prefetch href="/">Foam</a>
-      </li>
-      <li class:active={$page.url.pathname === "/notes"}>
-        <a sveltekit:prefetch href="/notes">Notes</a>
-      </li>
-      <li class:active={$page.url.pathname === "/build"}>
-        <a sveltekit:prefetch href="/build">Build</a>
-      </li>
-    </ul>
-    <svg class="arr" viewBox="0 0 100 150">
-      <polygon points="0,0 125,0 125,50 0,150" style="stroke-width:0" />
-    </svg>
-  </nav>
-
-  <div class="tr-corner">
+  <section id="header" />
+  <section class="nav">
+    <div class="tl-corner" />
     <!-- TODO put something else here? github link? -->
-  </div>
+    <nav class="m-links">
+      <svg class="arr" viewBox="0 0 100 150">
+        <polygon points="0,0 100,0 100,150 0,75" style="stroke-width:0" />
+      </svg>
+      <ul>
+        <li class:active={$page.url.pathname === "/"}>
+          <a sveltekit:prefetch href="/">Foam</a>
+        </li>
+        <li class:active={$page.url.pathname === "/notes"}>
+          <a sveltekit:prefetch href="/notes">Notes</a>
+        </li>
+        <li class:active={$page.url.pathname === "/build"}>
+          <a sveltekit:prefetch href="/build">Build</a>
+        </li>
+      </ul>
+      <svg class="arr" viewBox="0 0 100 150">
+        <polygon points="0,0 125,0 125,50 0,150" style="stroke-width:0" />
+      </svg>
+    </nav>
+
+    <div class="tr-corner">
+      <!-- TODO put something else here? github link? -->
+    </div>
+  </section>
 </header>
 
 <style>
-  header {
+  section#header {
+    height: clamp(0.175rem, 0.185rem, 0.235rem);
+    background-color: #8e8f8f;
+    background-size: cover;
+  }
+
+  section.nav {
     display: flex;
-    justify-content: space-between;
-    z-index: 1000;
+    justify-content: center;
   }
 
   .tl-corner,
@@ -68,6 +76,7 @@
   li {
     position: relative;
     height: 100%;
+    z-index: 1000;
   }
 
   li.active::before {
@@ -85,10 +94,10 @@
     display: flex;
     height: 100%;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0 clamp(0.1rem, 0.25rem, 0.5rem);
     color: var(--heading-color);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.1rem, 1.2rem);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-decoration: none;

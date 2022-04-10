@@ -29,11 +29,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: calc(100vh - 10rem);
+    min-height: calc(
+      100vh - 10rem - clamp(0.137rem, 0.145rem, 0.185rem) -
+        clamp(0.137rem, 0.145rem, 0.185rem)
+    );
     box-sizing: border-box;
   }
   .wrapper {
-    width: clamp(16rem, 90vw, 70rem);
+    width: clamp(16rem, 94vw, 72ch);
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
