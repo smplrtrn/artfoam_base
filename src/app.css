@@ -8,10 +8,20 @@
 	--tertiary-color: #e9ebf0;
 	--accent-color: #7a7a7a;
 	--dp-accent-color: #6d6d6d;
+	--frame-accent-color: #de5200;
+	--c-frame-gradient-color: linear-gradient(
+      44deg,
+      var(--frame-accent-color) 58%,
+      var(--nav-bg) 201%,
+      var(--accent-color) 32.35%,
+      var(--nav-bg) 59.45%,
+      var(--frame-accent-color) -12%
+    );
 	--ltr-accent-color: #8a8a8aef;
-	--nav-bg: #d0e0e1;
+	--nav-bg: #f3e9e6;
 	--heading-color: #000000b3;
 	--text-color: #444444;
+	--lt-text-color: #504d4d;
 	--background-without-opacity: rgba(255, 255, 255, 0.7);
 	--column-width: 72ch;
 	--canvas-width: 78ch;
@@ -79,6 +89,7 @@ h1, h2 {
 }
 h1 {
   font-size: clamp(2.35rem, 2.5rem, 2.135vh);
+	color: var(--lt-text-color);
   font-weight: 500;
 	letter-spacing: 0.166rem;
 	text-transform: uppercase;

@@ -154,7 +154,7 @@
 
   .t-frame {
     display: block;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%238a8a8aef' points='0.42555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%23de5200ef' points='0.42555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
     background-size: cover;
     background-repeat: repeat;
     fill: var(--accent-color);
@@ -185,7 +185,7 @@
 
   .p-frame {
     display: block;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%238a8a8aef' points='1.02555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cg %3E%3Cpolygon fill='%23504d4def' points='1.02555,1.26458336 139.92594,1.8422832 286.61518,299.37616 -1.26458325,278.5873'/%3E%3C/g%3E%3C/svg%3E");
     background-size: cover;
     background-repeat: repeat;
     width: auto;
@@ -197,17 +197,8 @@
 
   .c-frame {
     display: inline-flex;
-    background: linear-gradient(
-      44deg,
-      var(--primary-color) 58%,
-      var(--secondary-color) 201%,
-      var(--tertiary-color) 32.35%,
-      var(--secondary-color) 59.45%,
-      var(--primary-color) -12%
-    );
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: var(--text-color);
+    background: var(--c-frame-gradient-color);
+    color: var(--nav-bg);
     width: 100%;
     margin-bottom: clamp(3px, 0.15vh, 0.1%);
     padding: 0.5rem 0.5%;

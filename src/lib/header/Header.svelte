@@ -36,7 +36,7 @@
 <style>
   section#header {
     height: clamp(0.175rem, 0.185rem, 0.235rem);
-    background-color: #8e8f8f;
+    background-color: var(--frame-accent-color);
     background-size: cover;
   }
 
@@ -58,7 +58,7 @@
   }
 
   svg.arr polygon {
-    fill: var(--ltr-accent-color);
+    fill: var(--frame-accent-color);
   }
 
   ul {
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    background: var(--tertiary-color);
+    background: var(--nav-bg);
   }
 
   li {
