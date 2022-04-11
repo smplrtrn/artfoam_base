@@ -6,10 +6,11 @@
 	--secondary-color: #e9e9dc;
 	--auxiliary-color: #ececea;
 	--tertiary-color: #e9ebf0;
+	--track-color: #d7ddd8;
 	--accent-color: #7a7a7a;
 	--dp-accent-color: #6d6d6d;
 	--frame-accent-color: #de5200;
-	--c-frame-gradient-color: linear-gradient(
+	--c-frame-gradient: linear-gradient(
       44deg,
       var(--frame-accent-color) 58%,
       var(--nav-bg) 201%,
@@ -65,12 +66,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-	background-color: var(--secondary-color);
+	background-color: var(--track-color);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
-  outline: 1px solid var(--primary-color);
+  background-color: var(--track-color);
+  outline: 1px solid var(--frame-accent-color);
 }
 
 #svelte {
@@ -88,18 +89,25 @@ h1, h2 {
 	width: 100%;
 }
 h1 {
+	font-family: var(--font-sans);
   font-size: clamp(2.35rem, 2.5rem, 2.135vh);
-	color: var(--lt-text-color);
-  font-weight: 500;
-	letter-spacing: 0.166rem;
+	color: var(--frame-accent-color);
+  font-weight: 700;
+	background-image: linear-gradient(79deg, var(--frame-accent-color) 33%, var(--auxiliary-color) 17%, var(--auxiliary-color) 27%, var(--frame-accent-color) 23%);
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+	letter-spacing: 0.235rem;
 	text-transform: uppercase;
 	text-align: center;
 }
 h2 {
-	font-family: var(--font-mono);
-	font-size: clamp(1.66rem, 1.85rem, 1.75vh);
+	font-size: clamp(1.45rem, 1.66rem, 1.75vh);
 	font-weight: 700;
-	color: var(--accent-color);
+	color: var(--lt-text-color);
 }
 p {
 	font-family: var(--font-sans);
@@ -119,9 +127,9 @@ a:hover {
 pre {
 	font-size: 16px;
 	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
+	background-color: var(--auxiliary-color);
 	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	box-shadow: 2px 3px 0px var(--frame-accent-color);
 	padding: 0.5em;
 	overflow-x: auto;
 	color: var(--text-color);

@@ -95,7 +95,7 @@
     height: 100%;
     align-items: center;
     padding: 0 clamp(0.1rem, 0.25rem, 0.5rem);
-    color: var(--heading-color);
+    color: var(--lt-text-color);
     font-weight: 500;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
     text-transform: uppercase;
@@ -105,6 +105,6 @@
   }
 
   a:hover {
-    color: var(--accent-color);
+    color: var(--frame-accent-color);
   }
 </style>

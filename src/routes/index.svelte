@@ -197,7 +197,7 @@
 
   .c-frame {
     display: inline-flex;
-    background: var(--c-frame-gradient-color);
+    background: var(--c-frame-gradient);
     color: var(--nav-bg);
     width: 100%;
     margin-bottom: clamp(3px, 0.15vh, 0.1%);
