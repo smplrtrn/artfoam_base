@@ -99,7 +99,7 @@
     font-weight: 500;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.135rem;
     text-decoration: none;
     transition: color 0.2s linear;
   }
