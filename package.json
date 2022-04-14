@@ -5,7 +5,7 @@
     "dev": "svelte-kit dev --port 3333",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "svelte-kit preview --port 3333",
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
