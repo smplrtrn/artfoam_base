@@ -12,7 +12,7 @@
 <div class="content">
   <h1>Foam</h1>
   <figure class="p-frame">
-    <source srcset="qimg-dns.webp" type="image/webp" />
+    <source srcset="qimg-dns.avif" type="image/avif" />
     <filter
       id="filter"
       x="0%"
@@ -44,7 +44,12 @@
         in2="SourceGraphic"
         result="blend"
       />
-    </filter><img src="qimg-dns.jpg" alt="Welcome" class="welcome" />
+    </filter><img
+      src="qimg-dns.webp"
+      type="image/webp"
+      alt="Welcome"
+      class="welcome"
+    />
     <figcaption class="c-frame">What else?</figcaption>
   </figure>
   <section class="t-frame">
