@@ -1,0 +1,38 @@
+<svg viewBox="0 0 135.467 135.467" version="1.1" id="svg5" xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs2">
+        <filter id="selectable_hidder_filter" width="1" height="1" x="0" y="0" color-interpolation-filters="sRGB">
+            <feComposite id="boolops_hidder_primitive" result="composite1" operator="arithmetic" in2="SourceGraphic" in="BackgroundImage"/>
+        </filter>
+    </defs>
+    <g id="layer1" style="mix-blend-mode:lighten">
+        <path id="path1729" d="M-42.486 95.407V8.944h86.463v86.463z" transform="translate(66.566 -14.014) scale(1.56677)" fill="#cdd8d8" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path id="path70774" style="mix-blend-mode:soft-light" d="M114.163 45.405V18.014h18.91v14.234z" display="inline" opacity=".82" fill="#de5200" fill-opacity=".721" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:lighten" id="path1175" transform="matrix(1.05659 0 0 .3168 67.783 15.18)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#f3e9e6" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:lighten" id="path2046" transform="matrix(1.05659 0 0 -.3168 67.783 120.26)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#f3e9e6" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path id="path2042" style="mix-blend-mode:lighten" d="M114.163 90.035v27.391h18.91v-14.642z" opacity="1" fill="#de5200" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="path30163" style="mix-blend-mode:lighten" d="M114.163 90.035v27.391h18.91v-14.642z" opacity="1" fill="#de5200" fill-opacity=".719" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="path872" style="mix-blend-mode:multiply" d="M114.163 45.405V18.014h18.91v14.234z" opacity="1" fill="#de5200" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="path2044" style="mix-blend-mode:multiply" d="M3.984 102.647v14.779h18.91v-27.39z" opacity="1" fill="#de5200" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <g aria-label="F" id="text5674" style="line-height:17.8459px;-inkscape-font-specification:'IBM Plex Sans';mix-blend-mode:difference" transform="matrix(1.04734 0 0 .92021 -2.934 4.797)" font-size="182.742" font-family="IBM Plex Sans" letter-spacing="0" word-spacing="0" display="inline" opacity=".877" fill="#de5200" fill-opacity=".825" stroke-width=".412">
+            <path d="M47.24 5.615l-7.137 5.848h79.858l-7.134-8.729-4.752 23.391 7.135-5.83H55.896l-8.615 42.519h55.868l-7.135-8.73-4.75 23.391 7.133-5.83H45.448l-11.574 58.683 7.142-5.87H14.52l7.138 8.71zM47 139.017l11.575-58.684-7.142 5.872h52.914l7.709-37.951H56.184l7.135 8.725 5.665-27.96-7.135 5.835h59.31l7.71-37.95H34.137L5.634 139.016z" style="-inkscape-font-specification:'IBM Plex Sans Bold Italic'" id="path18996" font-style="italic" font-weight="700" fill="#de5200" fill-opacity=".825"/>
+        </g>
+        <g aria-label="F" id="g47084" style="line-height:17.8459px;-inkscape-font-specification:'IBM Plex Sans';mix-blend-mode:normal" transform="matrix(1.04734 0 0 .92021 -2.934 4.824)" font-size="182.742" font-family="IBM Plex Sans" letter-spacing="0" word-spacing="0" display="inline" opacity=".973" fill="#de5200" fill-opacity="1" stroke-width=".412">
+            <path d="M14.519 131.737L40.103 4.183h79.858l-4.751 23.391H61.849l-5.665 27.96h46.965l-4.752 23.39H51.433l-10.417 52.813z" style="-inkscape-font-specification:'IBM Plex Sans Bold Italic'" id="path47082" font-style="italic" font-weight="700" fill="#de5200" fill-opacity="1"/>
+        </g>
+        <g aria-label="F" id="g47080" style="line-height:17.8459px;-inkscape-font-specification:'IBM Plex Sans';mix-blend-mode:normal" transform="matrix(1.04734 0 0 .92021 -2.934 4.824)" font-size="182.742" font-family="IBM Plex Sans" letter-spacing="0" word-spacing="0" display="inline" opacity=".567" fill="#de5200" fill-opacity=".715" stroke-width=".412">
+            <path d="M14.519 131.737L40.103 4.183h79.858l-4.751 23.391H61.849l-5.665 27.96h46.965l-4.752 23.39H51.433l-10.417 52.813z" style="-inkscape-font-specification:'IBM Plex Sans Bold Italic'" id="path47078" font-style="italic" font-weight="700" fill="#de5200" fill-opacity=".715"/>
+        </g>
+        <path id="path30705" style="mix-blend-mode:soft-light" d="M114.163 45.405V18.014h18.91v14.234z" display="inline" opacity=".576" fill="#de5200" fill-opacity=".721" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="path1071" style="mix-blend-mode:lighten" d="M3.984 33.563V18.014h18.91v27.39z" opacity="1" fill="#de5200" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="path31301" style="mix-blend-mode:lighten" d="M3.984 33.563V18.014h18.91v27.39z" display="inline" opacity="1" fill="#de5200" fill-opacity=".717" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:lighten" id="path62609" transform="matrix(.05832 0 0 .08448 68.485 37.342)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#cdd8d8" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:multiply" id="path1749" transform="matrix(.05832 0 0 .08448 68.485 37.342)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#727272" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:lighten" id="path62611" transform="matrix(.05832 0 0 -.08448 68.485 98.098)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#cdd8d8" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path style="mix-blend-mode:lighten" id="path2048" transform="matrix(.05832 0 0 -.08448 68.485 98.098)" d="M-42.486 95.407V8.944h86.463v86.463z" opacity="1" fill="#727272" fill-opacity="1" fill-rule="evenodd" stroke-width=".5" stroke-linejoin="round"/>
+        <path id="path2040" style="mix-blend-mode:lighten" d="M4.266 118.379l128.806.43v-1.383H3.984z" opacity="1" fill="#4d4d4d" fill-rule="evenodd" stroke-width=".124" stroke-linejoin="round"/>
+        <path id="path62613" style="mix-blend-mode:lighten" d="M4.266 118.379l128.806.43v-1.383H3.984z" display="inline" opacity="1" fill="#4d4d4d" fill-opacity=".609" fill-rule="evenodd" stroke-width=".124" stroke-linejoin="round"/>
+        <path id="path29423" style="mix-blend-mode:soft-light" d="M3.984 102.647v14.779h18.91v-27.39z" opacity=".576" fill="#de5200" fill-opacity=".724" fill-rule="evenodd" stroke-width=".132" stroke-linejoin="round"/>
+        <path id="rect846" style="mix-blend-mode:lighten" d="M3.984 17.288l128.924-.295.164 1.021H3.984z" opacity="1" fill="#4d4d4d" fill-opacity="1" fill-rule="evenodd" stroke-width=".124" stroke-linejoin="round"/>
+        <path id="path62697" style="mix-blend-mode:lighten" d="M3.984 17.288l128.924-.295.164 1.021H3.984z" opacity="1" fill="#4d4d4d" fill-opacity=".615" fill-rule="evenodd" stroke-width=".124" stroke-linejoin="round"/>
+    </g>
+</svg>
