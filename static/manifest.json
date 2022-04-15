@@ -3,7 +3,7 @@
   "name": "the-art-foam",
   "start_url": "/",
   "background_color": "#cdd8d8",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#cdd8d8",
   "shortcuts": [
