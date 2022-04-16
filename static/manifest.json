@@ -5,7 +5,7 @@
   "background_color": "#cdd8d8",
   "display": "fullscreen",
   "scope": "/",
-  "theme_color": "#cdd8d8",
+  "theme_color": "#de5200",
   "shortcuts": [
     {
       "name": "Run Build",
