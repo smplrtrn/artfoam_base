@@ -11,45 +11,49 @@
 
 <div class="content">
   <h1>Foam</h1>
+
   <figure class="p-frame">
     <source srcset="qimg-dns.avif" type="image/avif" />
-    <filter
-      id="filter"
-      x="0%"
-      y="0%"
-      width="100%"
-      height="100%"
-      filterUnits="objectBoundingBox"
-      primitiveUnits="userSpaceOnUse"
-      color-interpolation-filters="sRGB"
-    >
-      <feColorMatrix
-        type="matrix"
-        values="1 0 0 0 0
+    <svg>
+      <filter
+        id="hu"
+        x="0%"
+        y="0%"
+        width="100%"
+        height="100%"
+        filterUnits="objectBoundingBox"
+        primitiveUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB"
+      >
+        <feColorMatrix
+          type="matrix"
+          values="1 0 0 0 0
             1 0 0 0 0
             1 0 0 0 0
             0 0 0 1 0"
-        in="SourceGraphic"
-        result="colormatrix"
-      />
-      <feComponentTransfer in="colormatrix" result="componentTransfer">
-        <feFuncR type="table" tableValues="0.47 0.21 0.93" />
-        <feFuncG type="table" tableValues="0.93 0.17 0.47" />
-        <feFuncB type="table" tableValues="0.73 0.31 0.58" />
-        <feFuncA type="table" tableValues="0 1" />
-      </feComponentTransfer>
-      <feBlend
-        mode="multiply"
-        in="componentTransfer"
-        in2="SourceGraphic"
-        result="blend"
-      />
-    </filter><img
+          in="SourceGraphic"
+          result="colormatrix"
+        />
+        <feComponentTransfer in="colormatrix" result="componentTransfer">
+          <feFuncR type="table" tableValues="0.47 0.21 0.93" />
+          <feFuncG type="table" tableValues="0.93 0.17 0.47" />
+          <feFuncB type="table" tableValues="0.73 0.31 0.58" />
+          <feFuncA type="table" tableValues="0 1" />
+        </feComponentTransfer>
+        <feBlend
+          mode="multiply"
+          in="componentTransfer"
+          in2="SourceGraphic"
+          result="blend"
+        />
+      </filter>
+    </svg><img
       src="qimg-dns.webp"
       type="image/webp"
       alt="Welcome"
       class="welcome"
     />
+
     <figcaption class="c-frame">What else?</figcaption>
   </figure>
   <section class="t-frame">
@@ -209,11 +213,15 @@
     padding: 0.5rem 0.5%;
     justify-content: space-evenly;
   }
-
+  svg {
+    position: absolute;
+    height: 0;
+    width: 0;
+  }
   img.welcome {
     position: relative;
-    filter: url(#filter);
     width: 100%;
     height: 100%;
+    filter: url(./#hu);
   }
 </style>

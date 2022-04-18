@@ -2,10 +2,10 @@
   "name": "artfoam-base",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --port 3333",
+    "dev": "svelte-kit dev --port 3033 --host",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview --port 3333",
+    "preview": "svelte-kit preview --port 3033 --host",
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
