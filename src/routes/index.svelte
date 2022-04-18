@@ -47,12 +47,8 @@
           result="blend"
         />
       </filter>
-    </svg><img
-      src="qimg-dns.webp"
-      type="image/webp"
-      alt="Welcome"
-      class="welcome"
-    />
+    </svg>
+    <img src="qimg-dns.webp" type="image/webp" alt="Welcome" class="welcome" />
 
     <figcaption class="c-frame">What else?</figcaption>
   </figure>
@@ -222,6 +218,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    filter: url(./#hu);
+    filter: url(#hu);
   }
 </style>
