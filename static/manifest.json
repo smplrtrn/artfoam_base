@@ -1,18 +1,13 @@
 {
   "short_name": "Art Foam Run",
   "name": "the-art-foam",
-  "start_url": "/",
+  "start_url": "https://artfoam-base.pages.dev/",
   "background_color": "#cdd8d8",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#de5200",
   "shortcuts": [
     {
-      "name": "Run Foam",
-      "short_name": "Foam",
-      "description": "The Art Foam Run",
-      "url": "/"
-    },    {
       "name": "Run Build",
       "short_name": "Build",
       "description": "The Art Foam Run",
